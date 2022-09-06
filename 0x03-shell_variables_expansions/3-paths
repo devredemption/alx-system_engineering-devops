@@ -1,2 +1,2 @@
 #!/bin/bash
-ls $(path) | wc -l
+echo $(find "$path"* -maxdepth 0 -type d | wc -l)
